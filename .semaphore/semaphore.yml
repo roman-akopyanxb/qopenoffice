@@ -1,0 +1,14 @@
+version: v1.0
+name: GIT-QOPENOFFICE
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: GIT-QOPENOFFICE
+    task:
+      jobs:
+      - name: RAPID
+        commands:
+          - checkout
+          - source ./xtra-qopenofficese
